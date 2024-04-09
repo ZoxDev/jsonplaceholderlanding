@@ -8,7 +8,7 @@ export type typeComment = {
   body: string;
 };
 
-const useComments = (postId: number) => {
+const useComments = (postId: string) => {
   return useQuery({
     queryKey: ['getTagInPage', postId],
     queryFn: async () => {
