@@ -1,5 +1,5 @@
-
 import LandingPage from './views/LandingPage';
+import CommentView from './views/CommentsView';
 import {
   createRoutesFromElements,
   createBrowserRouter,
@@ -8,11 +8,11 @@ import {
 } from 'react-router-dom';
 
 function App() {
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/comments/:id" element={<CommentView />} />
       </>,
     ),
   );
