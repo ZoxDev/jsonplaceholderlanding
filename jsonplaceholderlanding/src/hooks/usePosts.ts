@@ -1,6 +1,6 @@
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 
-type typePost = {
+export type typePost = {
   userId: number;
   id: number;
   title: string;
