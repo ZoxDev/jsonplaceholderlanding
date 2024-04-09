@@ -14,7 +14,7 @@ const LandingPage = () => {
             Here you can visit post below and click on it to see there comments, insane huh 😊
           </p>
         </section>
-        <section className="flex flex-wrap gap-4">
+        <section className="flex flex-wrap gap-4 justify-center mt-5">
           {postList.data?.map((post) => {
             return <PostCard key={post.id} post={post}></PostCard>;
           })}
