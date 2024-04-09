@@ -1,5 +1,5 @@
 import PostCard from '../components/PostCard';
-import Comments from '../components/Comments';
+import Comment from '../components/Comment';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const queryClient = new QueryClient();
@@ -17,7 +17,7 @@ const LandingPage = () => {
           </section>
 
           <PostCard></PostCard>
-          <Comments></Comments>
+          <Comment></Comment>
         </main>
       </QueryClientProvider>
     </>

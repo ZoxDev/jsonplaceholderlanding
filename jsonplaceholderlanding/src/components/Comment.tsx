@@ -1,4 +1,4 @@
-const Comments = () => {
+const Comment = () => {
   return (
     <>
       <section className="rounded-md bg-gray-700 border-2 w-1/6">
@@ -14,4 +14,4 @@ const Comments = () => {
   );
 };
 
-export default Comments;
+export default Comment;
