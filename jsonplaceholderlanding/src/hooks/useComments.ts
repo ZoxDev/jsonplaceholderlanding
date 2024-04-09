@@ -12,7 +12,7 @@ const useComments = (postId: number) => {
   return useQuery({
     queryKey: ['getTagInPage', postId],
     queryFn: async () => {
-      const data: typeComment = await fetch(
+      const data: Array<typeComment> = await fetch(
         `https://jsonplaceholder.typicode.com/posts/${postId}/comments`,
       ).then((res) => res.json());
 

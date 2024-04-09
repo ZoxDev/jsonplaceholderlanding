@@ -11,8 +11,8 @@ const usePosts = () => {
   return useQuery({
     queryKey: ['getTagInPage'],
     queryFn: async () => {
-      const data: typePost = await fetch('https://jsonplaceholder.typicode.com/posts').then((res) =>
-        res.json(),
+      const data: Array<typePost> = await fetch('https://jsonplaceholder.typicode.com/posts').then(
+        (res) => res.json(),
       );
 
       return data;
