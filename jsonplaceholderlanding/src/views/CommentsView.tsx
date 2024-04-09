@@ -1,6 +1,6 @@
 import Comment from '../components/Comment';
 
-const LandingPage = () => {
+const CommentView = () => {
   return (
     <>
       <main className="w-scree h-screen bg-gray-800 text-white">
@@ -15,4 +15,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default CommentView;
